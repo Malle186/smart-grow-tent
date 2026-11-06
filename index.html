@@ -3,54 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smart Grow Tent</title>
+<title>Smart Grow Tent Dashboard</title>
 
 <style>
 body{
-    font-family: Arial, sans-serif;
-    background:#1e1e1e;
+    margin:0;
+    background:#121212;
+    font-family:Arial,sans-serif;
     color:white;
+}
+
+header{
+    background:#1E1E1E;
+    padding:20px;
     text-align:center;
-    padding:30px;
+}
+
+h1{
+    color:#4CAF50;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
 }
 
 .card{
-    background:#2d2d2d;
+    background:#242424;
     padding:20px;
-    margin:20px auto;
-    max-width:500px;
     border-radius:15px;
+    text-align:center;
 }
 
 .value{
-    font-size:30px;
+    font-size:32px;
     color:#4CAF50;
+    margin-top:10px;
+}
+
+.status{
+    margin-top:20px;
+    background:#242424;
+    padding:20px;
+    border-radius:15px;
+}
+
+button{
+    background:#4CAF50;
+    border:none;
+    color:white;
+    padding:12px 20px;
+    margin:5px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#45a049;
 }
 </style>
-
 </head>
+
 <body>
 
-<h1>🌱 Smart Grow Tent</h1>
+<header>
+    <h1>🌱 Smart Grow Tent</h1>
+    <p>IoT-Projekt mit ESP32</p>
+</header>
+
+<div class="container">
+
+<div class="cards">
 
 <div class="card">
-    <h2>Temperatur</h2>
-    <div class="value">22°C</div>
+<h3>🌡 Temperatur</h3>
+<div class="value">22.5 °C</div>
 </div>
 
 <div class="card">
-    <h2>Luftfeuchtigkeit</h2>
-    <div class="value">58%</div>
+<h3>💧 Luftfeuchtigkeit</h3>
+<div class="value">58 %</div>
 </div>
 
 <div class="card">
-    <h2>Bodenfeuchte</h2>
-    <div class="value">45%</div>
+<h3>🌱 Bodenfeuchte</h3>
+<div class="value">47 %</div>
 </div>
 
 <div class="card">
-    <h2>Licht</h2>
-    <div class="value">850 Lux</div>
+<h3>☀ Licht</h3>
+<div class="value">850 Lux</div>
+</div>
+
+</div>
+
+<div class="status">
+<h2>Status</h2>
+
+<p>💡 Grow-Light: EIN</p>
+
+<p>🚿 Pumpe: AUS</p>
+
+<button>💧 Jetzt gießen</button>
+
+<button>💡 Licht EIN</button>
+
+<button>💡 Licht AUS</button>
+
+</div>
+
 </div>
 
 </body>
