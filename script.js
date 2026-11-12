@@ -57,5 +57,19 @@ function waterPlant(){
         "";
 
     },1500);
+function lightOn(){
 
+    document.getElementById(
+        "lightStatus"
+    ).innerText = "EIN";
+
+}
+
+function lightOff(){
+
+    document.getElementById(
+        "lightStatus"
+    ).innerText = "AUS";
+
+}
 }
