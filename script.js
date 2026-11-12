@@ -1,4 +1,3 @@
-
 let growthStage = 1;
 
 const bonsai =
@@ -41,6 +40,11 @@ setInterval(() => {
 
 },5000);
 
+
+// =========================
+// GIESSEN
+// =========================
+
 function waterPlant(){
 
     const tank =
@@ -57,19 +61,36 @@ function waterPlant(){
         "";
 
     },1500);
+
+}
+
+
+// =========================
+// LICHT STEUERUNG
+// =========================
+
 function lightOn(){
 
+    const light =
     document.getElementById(
         "lightStatus"
-    ).innerText = "EIN";
+    );
 
+    light.innerText = "EIN";
+
+    light.className =
+    "status-on";
 }
 
 function lightOff(){
 
+    const light =
     document.getElementById(
         "lightStatus"
-    ).innerText = "AUS";
+    );
 
-}
+    light.innerText = "AUS";
+
+    light.className =
+    "status-off";
 }
