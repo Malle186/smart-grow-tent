@@ -52,22 +52,33 @@
 
                 <h2>Status</h2>
 
-                <p>💡 Grow-Light: EIN</p>
+                <p>
+                💡 Grow-Light:
+            <span id="lightStatus">
+                 EIN
+                 </span>
+                 </p>
                 <p>🚿 Pumpe: AUS</p>
                 <p>📶 WLAN: Verbunden</p>
 
                 <div class="button-group">
 
                     <button onclick="waterPlant()">
+                    
                         💧 Gießen
+                    
                     </button>
 
-                    <button>
+                    <button onclick="lightOn()">
+                    
                         💡 Licht EIN
+                    
                     </button>
 
-                    <button>
+                    <button onclick="lightOff()">
+   
                         💡 Licht AUS
+
                     </button>
 
                 </div>
